@@ -2,7 +2,7 @@
 name = "langflow-base"
 version = "0.4.2"
 description = "A Python package with a built-in web application"
-requires-python = ">=3.10,<3.14"
+requires-python = ">=3.12,<4.0"
 license = "MIT"
 keywords = ["nlp", "langchain", "openai", "gpt", "gui"]
 readme = "README.md"
@@ -46,7 +46,6 @@ dependencies = [
     "python-jose>=3.3.0,<4.0.0",
     "pandas==2.2.3",
     "multiprocess>=0.70.14,<1.0.0",
-    #"duckdb>=1.0.0,<2.0.0",
     "python-docx>=1.1.0,<2.0.0",
     "jq>=1.7.0,<2.0.0; sys_platform != 'win32'",
     "nest-asyncio>=1.6.0,<2.0.0",
@@ -55,14 +54,11 @@ dependencies = [
     "asyncer>=0.0.5,<1.0.0",
     "pyperclip>=1.8.2,<2.0.0",
     "uncurl>=0.0.11,<1.0.0",
-    #"sentry-sdk[fastapi,loguru]>=2.5.1,<3.0.0",
     "chardet>=5.2.0,<6.0.0",
-    #"firecrawl-py>=1.0.16,<2.0.0",
     "opentelemetry-api>=1.25.0,<2.0.0",
     "opentelemetry-sdk>=1.25.0,<2.0.0",
     "opentelemetry-exporter-prometheus>=0.46b0,<1.0.0",
     "opentelemetry-instrumentation-fastapi>=0.46b0,<1.0.0",
-    #"prometheus-client>=0.20.0,<1.0.0",
     "aiofiles>=24.1.0,<25.0.0",
     "setuptools>=70,<76.0.0",
     "nanoid>=2.0.0,<3.0.0",
@@ -70,8 +66,6 @@ dependencies = [
     "grandalf>=0.8.0,<1.0.0",
     "spider-client>=0.0.27,<1.0.0",
     "diskcache>=5.6.3,<6.0.0",
-    #"clickhouse-connect==0.7.19",
-    #"assemblyai>=0.33.0,<1.0.0",
     "fastapi-pagination>=0.13.1,<1.0.0",
     "defusedxml>=0.7.1,<1.0.0",
     "pypdf~=5.1.0",
@@ -83,15 +77,22 @@ dependencies = [
     "greenlet>=3.1.1",
     "jsonquerylang>=1.1.1",
     "sqlalchemy[aiosqlite]>=2.0.38,<3.0.0",
-    #'elevenlabs==1.58.1; python_version == "3.12"',
-    #'elevenlabs>=1.52.0; python_version != "3.12"',
     "webrtcvad>=2.0.10",
     "scipy>=1.15.2",
+    "trustcall>=0.0.38",
+    "litellm>=1.2.1",
+    #"duckdb>=1.0.0,<2.0.0",
+    #"sentry-sdk[fastapi,loguru]>=2.5.1,<3.0.0",
+    #"firecrawl-py>=1.0.16,<2.0.0",
+    #"prometheus-client>=0.20.0,<1.0.0",
+    #"clickhouse-connect==0.7.19",
+    #"assemblyai>=0.33.0,<1.0.0",
+    #'elevenlabs==1.58.1; python_version == "3.12"',
+    #'elevenlabs>=1.52.0; python_version != "3.12"',
     #"ibm-watsonx-ai>=1.3.1",
     #"langchain-ibm>=0.3.8",
-    "trustcall>=0.0.38",
-    "litellm>=1.2.1"
 ]
+
 
 [dependency-groups]
 dev = [
